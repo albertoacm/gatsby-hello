@@ -7,6 +7,9 @@
 module.exports = {
   /* Your site config here */
   plugins: [
+    `gatsby-plugin-sharp`, 
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -28,9 +31,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-sharp`, 
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
